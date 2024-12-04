@@ -27,6 +27,7 @@ app.get("/",(req,res)=>{
     res.render("index")
 })
 
-server.listen(3001,()=>{
-    console.log(`Server running in http://localhost:${3001}`)
-})
+server.listen(0, () => {
+    const address = server.address(); // Get server address information
+    console.log(`Server running at http://localhost:${address.port}`);
+});
