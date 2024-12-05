@@ -6,15 +6,13 @@
     <title>Real-Time Location & Weather Tracker</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>Real-Time Location & Weather Tracker</header>
-    <div style="display: flex; flex-wrap: wrap; gap: 20px; padding: 20px;">
+    <h1>Real-Time Location & Weather Tracker</h1>
+    <div id="container">
         <div id="map"></div>
-        <div class="connected-users">
-            <h3>Connected Users</h3>
-            <!-- User cards will be dynamically inserted here -->
+        <div id="weather-panel">
+            <h2>Connected Users</h2>
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet-src.min.js"></script>

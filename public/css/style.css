@@ -1,100 +1,38 @@
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
 }
-
 html, body {
+    font-family: Arial, sans-serif;
     width: 100%;
     height: 100%;
-    background: #f4f4f9;
-    color: #333;
-}
-
-/* Header Styling */
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #4a90e2;
-    color: white;
-    padding: 15px 0;
-    font-size: 1.5em;
-    font-weight: bold;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Map Styling */
-#map {
-    width: 100%;
-    height: calc(70vh);
-    border-radius: 10px;
-    margin: 20px auto;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* User Info Section */
-.connected-users {
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    width: 25%;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    text-align: center;
+    margin: 10px;
+}
+#container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+#map {
+    flex: 3;
+    height: 100%;
+}
+#weather-panel {
+    flex: 1;
+    background-color: #f4f4f4;
     overflow-y: auto;
-}
-
-.connected-users h3 {
-    margin-bottom: 20px;
-    color: #4a90e2;
-}
-
-.user-card {
-    margin-bottom: 15px;
     padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    background: #fafafa;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border-left: 2px solid #ccc;
 }
-
-.user-card strong {
-    display: block;
-    color: #333;
+.user-info {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: #fff;
 }
-
-.user-card span {
-    font-size: 0.9em;
-    color: #666;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    #map {
-        height: calc(50vh);
-    }
-
-    .connected-users {
-        width: 100%;
-        margin-top: 10px;
-    }
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.user-card {
-    animation: fadeIn 0.3s ease-in-out;
-}
-
