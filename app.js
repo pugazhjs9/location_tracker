@@ -27,7 +27,7 @@ app.get("/",(req,res)=>{
     res.render("index")
 })
 
-server.listen(0, () => {
-    const address = server.address(); // Get server address information
-    console.log(`Server running at http://localhost:${address.port}`);
+const PORT = process.env.PORT || 3001;
+server.listen(PORT, () => {
+    console.log(`Server running at http://localhost:${PORT}`);
 });
